@@ -1,0 +1,17 @@
+ipython
+iPywidgets
+jupyter
+jupyter-book
+lxml
+matplotlib
+numpy
+pandas
+paramiko
+pylint
+pymongo
+PyYAML
+requests
+scipy
+seaborn
+suds
+zeep

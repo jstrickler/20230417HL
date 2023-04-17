@@ -1,0 +1,133 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"check __name__": {
+		"prefix": "m_",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"    $0",
+		]
+	},
+	"prop": {
+		"prefix": "prop",
+		"body": [
+			"@property",
+			"def ${1:propname}(self):",
+			"    return self._${1:propname}",
+			"$0"
+		]
+	},
+	"props": {
+		"prefix": "props",
+		"body": [
+			"@property",
+			"def $1(self):",
+			"    return self._$1",
+            "",
+			"@$1.setter",
+			"def $1(self, value):",
+			"    self._$1 = value",
+			"$0"
+		]
+	},
+	"print object": {
+		"prefix": "p_",
+		"body": [
+			"print(\"${expr}: {}\".format(${expr}))",
+			"$0"
+		]
+	},
+	"print object newline": {
+		"prefix": "p+",
+		"body": [
+			"print(\"${expr}: {}\\n\".format($expr))",
+			"$0"
+		]
+	},
+
+	"print line": {
+		"prefix": "p-",
+		"body": [
+			"print('-' * 60)",
+			"$0"
+		]
+	},
+	"insert airport dictionary": {
+		"prefix": "adict",
+		"body": [
+			"airports = {",
+			"   'EWR': 'Newark',",
+			"   'YYZ': 'Toronto',",
+			"   'MCI': 'Kansas City',",
+			"   'SFO': 'San Francisco',",
+			"   'RDU': 'Raleigh-Durham',",
+			"   'SJC': 'San Jose',",
+			"   'MCO': 'Orlando',",
+			"   'YCC': 'Calgary',",
+			"   'ABQ': 'Albuquerque',",
+			"   'OAK': 'Oakland',",
+			"   'SMF': 'Sacramento',",
+			"   'YOW': 'Ottawa',",
+			"   'IAD': 'Dulles',",
+			"}",
+			"$0"
+		]
+	},
+	"insert computer people": {
+		"prefix": "cpeople",
+		"body": [
+			"people = [",
+			"    ('Melinda', 'Gates', 'Gates Foundation', '1964-08-15'),",
+			"    ('Steve', 'Jobs', 'Apple', '1955-02-24'),",
+			"    ('Larry', 'Wall', 'Perl', '1954-09-27'), ",
+			"    ('Paul', 'Allen', 'Microsoft', '1953-01-21'),",
+			"    ('Larry', 'Ellison', 'Oracle', '1944-08-17'),",
+			"    ('Grace', 'Hopper', 'COBOL', '1906-12-09'),",
+			"    ('Bill', 'Gates', 'Microsoft', '1955-10-28'),",
+			"    ('Thomas', 'Kurtz', 'BASIC', '1928-02-28'),",
+            "    ('Ada', 'Lovelace', 'Analytical Engine', '1815-12-10'),",
+			"    ('Grace', 'Hopper', 'COBOL', '1906-12-09'),",
+			"    ('Mark', 'Zuckerberg', 'Facebook', '1984-05-14'),",
+			"    ('Sergey','Brin', 'Google', '1973-08-21'),",
+			"    ('Larry', 'Page', 'Google', '1973-03-26'),",
+			"    ('Linus', 'Torvalds', 'Linux', '1969-12-28'),",
+			"]",	
+			"$0"
+		]
+	},
+	"insert lower case fruits": {
+		"prefix": "fruitlc",
+		"body": [
+			"fruits = ['pomegranate', 'cherry', 'apricot', 'apple',",
+			"'lemon', 'kiwi', 'orange', 'lime', 'watermelon', 'guava',",
+			"'papaya', 'fig', 'pear', 'banana', 'tamarind', 'persimmon',",
+			"'elderberry', 'peach', 'blueberry', 'lychee', 'grape', 'date' ]",
+			"$0"	
+		]
+	},
+	"insert mixed case fruits": {
+		"prefix": "fruitmc",
+		"body": [
+			"fruits = ['pomegranate', 'cherry', 'apricot', 'Apple',",
+			"'lemon', 'Kiwi', 'ORANGE', 'lime', 'Watermelon', 'guava', ",
+			"'Papaya', 'FIG', 'pear', 'banana', 'Tamarind', 'Persimmon', ",
+			"'elderberry', 'peach', 'BLUEberry', 'lychee', 'GRAPE', 'date' ]",	
+			"$0"
+		]
+
+	}
+
+}
+

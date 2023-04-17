@@ -1,0 +1,33 @@
+actor = "Chris Hemsworth"
+
+spam = 5
+ham = 10
+result = spam + ham
+print(f"result: {result}")
+
+foo = None   # null/nil/missing
+
+Ham = 5
+HAM = 22
+
+#   a-z _ 0-9 A-Z
+
+# soap_service_ip_address
+# customer_account_number
+# 
+# MAX_TRIES = 5
+
+# int x = 5;
+
+a = "123"
+b = 456
+# result = a + b
+print(f"result: {result}")
+print(f"type(a): {type(a)}")
+print(f"type(b): {type(b)}")
+
+    
+
+
+
+
