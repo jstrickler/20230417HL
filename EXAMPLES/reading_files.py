@@ -1,7 +1,13 @@
-
+import os
+import fcntl
 FILE_NAME = '../DATA/mary.txt'
 
-mary_in = open(FILE_NAME)  # open file for reading
+# fcntl.flock(myfile, fcntl.LOCK_EX)
+# fcntl.flock(myfile, fcntl.LOCK_UN)
+
+print("size of file:", os.path.getsize(FILE_NAME))
+
+mary_in = open(FILE_NAME, 'r')  # open file for reading
 # read file...
 mary_in.close()  # close file (easy to forget to do this!)
 

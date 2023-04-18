@@ -9,5 +9,15 @@ while True:  # Loop "forever"
         print("goodbye!")
         break  # Exit loop
 
-    quantity = int(raw_quantity)  # could validate via try/except
-    print("sending {} ticket(s)".format(quantity))
+    try:
+        quantity = int(raw_quantity)  # could validate via try/except
+    except ValueError as err:
+        print(err)
+    else:
+        print("sending {} ticket(s)".format(quantity))
+
+def try_parse_int(s, base=10, val=None):
+  try:
+    return int(s, base)
+  except ValueError:
+    return val
