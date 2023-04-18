@@ -1,5 +1,6 @@
 import os
 import fcntl
+
 FILE_NAME = '../DATA/mary.txt'
 
 # fcntl.flock(myfile, fcntl.LOCK_EX)

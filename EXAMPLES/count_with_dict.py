@@ -7,6 +7,8 @@ with open("../DATA/breakfast.txt") as breakfast_in:
             counts[breakfast_item] = counts[breakfast_item] + 1   # if so, increment count for specified key
         else:
             counts[breakfast_item] = 1 # else add new element 
+        # counts[breakfast_item] = counts.get(breakfast_item, 0) + 1
 
 for item, count in counts.items():
     print(item, count)
+
