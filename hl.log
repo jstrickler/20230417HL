@@ -1,0 +1,9 @@
+ERROR:root:[Errno 2] No such file or directory: 'DATA/wombats.txt'
+ERROR:root:[Errno 2] No such file or directory: 'DATA/wombats.txt'
+DEBUG:root:processing number 0
+ERROR:root:[Errno 2] No such file or directory: 'DATA/wombats.txt'
+Traceback (most recent call last):
+  File "/Users/jstrick/Desktop/py3hlsci/error_handling.py", line 11, in <module>
+    with open(FILE_PATH) as file_in:
+FileNotFoundError: [Errno 2] No such file or directory: 'DATA/wombats.txt'
+DEBUG:root:processing number 0

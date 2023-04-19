@@ -1,13 +1,23 @@
-scores_by_student = {}
+"""
+Module docstring
 
-with open("../DATA/testscores.dat") as scores_in:
+DRY principle  (Don't Repeat Yourself)
 
-    for line in scores_in:
-        name, score = line.split(":")
-        score = int(score)
-        scores_by_student[name] = score
+"""
+DATA_FILE_PATH = "../DATA/testscores.dat"
 
-for student, score in scores_by_student.items():
+def main():
+    data = get_data()
+    for student, (score, grade) in data.items():
+        print("{:20s} {} {}".format(student, score, grade))
+
+    average = get_avg(data)
+    print("\naverage score is  {:.2f}\n".format(average))
+
+def compute_grade(score):
+    """
+    Function docstring
+    """
     if score > 94:
         grade = 'A'
     elif score > 88:
@@ -18,9 +28,23 @@ for student, score in scores_by_student.items():
         grade = 'D'
     else:
         grade = 'F'
+    return grade
 
-    print("{:20s} {} {}".format(student, score, grade))
+def get_data():
+    scores_by_student = {}
 
-sum_of_scores = sum(scores_by_student.values())
-average = sum_of_scores/len(scores_by_student)
-print("\naverage score is  {:.2f}\n".format(average))
+    with open(DATA_FILE_PATH) as scores_in:
+
+        for line in scores_in:
+            name, score = line.split(":")
+            score = int(score)
+            scores_by_student[name] = (score, compute_grade(score))
+    return scores_by_student
+
+def get_avg(data):
+    sum_of_scores = sum(score[0] for score in data.values())
+    return sum_of_scores/len(data)
+
+if __name__ == "__main__":
+    main()
+

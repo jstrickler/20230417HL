@@ -1,0 +1,18 @@
+INFO root 04/18/23-17:41:28 logging_formatted.py 11 this is information
+WARNING root 04/18/23-17:41:28 logging_formatted.py 12 this is a warning
+ERROR root 04/18/23-17:41:28 logging_formatted.py 13 this is an ERROR
+ERROR root 04/18/23-17:41:28 logging_formatted.py 15 Invalid value 38.7
+INFO root 04/18/23-17:41:28 logging_formatted.py 16 this is information
+CRITICAL root 04/18/23-17:41:28 logging_formatted.py 17 this is critical
+INFO root 04/18/23-17:41:30 logging_formatted.py 11 this is information
+WARNING root 04/18/23-17:41:30 logging_formatted.py 12 this is a warning
+ERROR root 04/18/23-17:41:30 logging_formatted.py 13 this is an ERROR
+ERROR root 04/18/23-17:41:30 logging_formatted.py 15 Invalid value 38.7
+INFO root 04/18/23-17:41:30 logging_formatted.py 16 this is information
+CRITICAL root 04/18/23-17:41:30 logging_formatted.py 17 this is critical
+INFO root 04/18/23-17:41:31 logging_formatted.py 11 this is information
+WARNING root 04/18/23-17:41:31 logging_formatted.py 12 this is a warning
+ERROR root 04/18/23-17:41:31 logging_formatted.py 13 this is an ERROR
+ERROR root 04/18/23-17:41:31 logging_formatted.py 15 Invalid value 38.7
+INFO root 04/18/23-17:41:31 logging_formatted.py 16 this is information
+CRITICAL root 04/18/23-17:41:31 logging_formatted.py 17 this is critical
