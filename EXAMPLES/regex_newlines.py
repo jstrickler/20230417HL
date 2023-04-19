@@ -9,7 +9,7 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
-line_start_word = r'^\w+'  # match word at beginning of string/line
+line_start_word = r'^\w{3,}'  # match word at beginning of string/line
 
 matches = re.findall(line_start_word, s)  # only matches at beginning of string
 print("matches:", matches)
