@@ -1,4 +1,7 @@
 import os
+import sys
+
+print(f"sys.platform: {sys.platform}")
 
 os.system("hostname")  # Just run "hostname"
 

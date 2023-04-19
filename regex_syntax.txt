@@ -1,0 +1,74 @@
+
+'pat'       "pat"  "the pathology"  "compatible"  "the alien spat"
+
+'p.t'      'p' + any-character + 't'
+'p\.t'     'p.t'
+
+'p[aeiou]t'    "pat"  "Capetown"  "waterspout"  
+'p[^ ]t'      "pat"  'p,t'   'prt'   
+
+'p[a-z]t'  
+'p[-a-z]t'
+
+'[a-fA-F0-9]'    hex digits
+
+'[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]'   SSN
+
+'\d\d\d-\d\d-\d\d\d\d'   also SSN
+
+\d  [0-9]          digit
+\s  [ \t\n\r\f\b]  space
+\w  [a-zA-Z0-9_]  "word" character
+
+'\d{3}-\d{2}-\d{4}'    also SSN
+
+"23830932-32-3902932039293"
+
+{n}  exactly n
+{n,}  at least n
+{n,m}  n through m times
+
+'p[aeiou]{1,2}t'  
+
+# Kleene star  -->  '*'
+'pa*t'    # 'p' + 0 or more 'a' + 't'    "pt"  "pat" "paaaaaaaaaaaaaaaaaaaaaat"
+
+#  * + ?  **
+
+'pa+t'   NOT 'pt'  but 'pat' 'paaaaaat'  etc
+
+'pa?t'   pt pat  ONLY
+
+'spam.*ham'   "spam and a ham and a toast and a ham"  "spamham"
+
+'spam.*?ham'   "spam and a ham and a toast and a ham"
+
+'^spam'    "spam is good"  NOT "the spam is good"
+'toast$'   
+
+'^\s*\d+\s*$'   "123"   "    123    "      "32  "   "   33"   
+
+'\bthe\b'       "I see the issue"  "the bug is big"  BUT NOT "I need a therapist" "the lathe is running"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
