@@ -1,4 +1,5 @@
 from geometry import circle_area, rectangle_area, square_area
+from collections import Counter
 
 a1 = circle_area(8)
 a2 = rectangle_area(10, 12)

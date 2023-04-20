@@ -9,7 +9,7 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
-rx_code = re.compile(r'(?P<letter>[A-Z])-(?P<number>\d{2,3})', re.I)
+rx_code = re.compile(r'[A-Z]-\d{2,3}', re.I)
 
 s2 = rx_code.sub("[REDACTED]", s) # replace pattern with string
 print(s2)

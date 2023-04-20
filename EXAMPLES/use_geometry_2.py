@@ -1,4 +1,6 @@
 import geometry as g
+import typing as T
+import lxml.etree as et
 
 a1 = g.circle_area(8)
 a2 = g.rectangle_area(10, 12)

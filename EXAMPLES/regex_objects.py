@@ -26,3 +26,5 @@ print()
 
 matches = rx_code.findall(s)
 print("matches:", matches)
+
+#   'foo(?:spam|ham)bar'

@@ -11,6 +11,11 @@ import math   # load math.py
 
 PI = math.pi
 
+def main():
+    x = circle_area(24)
+    print(f"x: {x}")
+
+
 def circle_area(diameter):
     """
     Compute the area of a circle from a given diameter
@@ -39,3 +44,9 @@ def square_area(side):
     :return: Area of square
     """
     return side ** 2
+
+def _not_quite_private():
+    print("I am not private")
+
+if __name__ == "__main__":  # if I'm run as a script...
+    main()
