@@ -47,7 +47,7 @@ def add_image_attachment(file_name, message):
     with open(file_name, 'rb') as file_in:  # read data for binary attachment
         attachment_data = file_in.read()
     image_type = what(None, h=attachment_data)  # get type of binary data
-    message.add_attachment(attachment_data, maintype='image', subtype=image_type)  # add binary attachment to message, including type and subtype (e.g., "image/jpg)"
+    message.add_attachment(attachment_data, filename="felix_auto.jpg", maintype='image', subtype=image_type)  # add binary attachment to message, including type and subtype (e.g., "image/jpg)"
 
 
 def create_smtp_server():

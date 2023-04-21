@@ -33,3 +33,4 @@ print()
 print_header("df[['alpha','epsilon','beta']]['b':'e']")
 print(df[['alpha', 'epsilon', 'beta']]['b':'e'])  # select columns AND slice rows
 print()
+

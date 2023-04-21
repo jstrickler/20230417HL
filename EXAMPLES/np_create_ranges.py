@@ -4,6 +4,10 @@ r1 = np.arange(50)  # create range of ints from 0 to 49
 print(r1)
 print("size is", r1.size)  # size is 50
 print()
+r1.shape = 5, 10
+print(r1)
+r1.shape = 10, 5
+print(r1)
 
 r2 = np.arange(5, 101, 5)  # create range of ints from 5 to 100 counting by 5
 print(r2)

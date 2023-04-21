@@ -49,7 +49,7 @@ def encode_date(date_obj):
 
 @encode.register(Parrot)
 def encode_parrot(parrot_obj):
-    return {'name': parrot_obj.name, 'color': parrot_obj.color}
+    return {'parrot_name': parrot_obj.name, 'hue': parrot_obj.color}
 
 
 # register other encoding functions here

@@ -16,7 +16,7 @@ if response.status_code == requests.codes.OK:  # check status code
             cmd = saved_pdf_file
         elif sys.platform == 'darwin':
             cmd = 'open ' + saved_pdf_file
-        else:
-            cmd = 'acroread ' + saved_pdf_file
+        else:  # linux?
+            cmd = '??? ' + saved_pdf_file
 
         run(cmd, shell=True)  # run command with command.exe or Mac/Linux shell

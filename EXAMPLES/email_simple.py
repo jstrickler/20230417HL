@@ -26,6 +26,8 @@ msg.set_content(MESSAGE_BODY)  # add the message body
 msg['Subject'] = MESSAGE_SUBJECT  # add the message subject
 msg['from'] = SENDER  # add the sender address
 msg['to'] = RECIPIENTS  # add a list of recipients
+# msg['cc'] = ['bob@bobshouse.com', ....]
+# msg['bcc'] = 'jamesbond@mi6.gov.uk'
 
 try:
     smtp.send_message(msg)  # send the message

@@ -10,6 +10,10 @@ b = np.array(
      [25, 13, 43, 1, 31, 52, 41, 90]]
 )  # sample array b
 
+x = 5
+y = 10
+result = x + y   #   x.__add__(y)
+
 print('a =>\n', a)
 print()
 print('b =>\n', b)

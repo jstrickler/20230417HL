@@ -28,3 +28,6 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])  # select column 'gamma'
+
+print(f"df.index: {df.index}")
+print(f"df.columns: {df.columns}")

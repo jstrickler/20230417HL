@@ -1,5 +1,6 @@
 from pprint import pprint
 import json
+from types import SimpleNamespace
 
 # json.loads(STRING)     load from string
 # json.load(FILE_OBJECT) load from file-like object
@@ -25,3 +26,13 @@ for group in solar:
     if group.endswith('planets'):
         for planet in solar[group]:
             print(planet['name'])
+
+print("=" * 60)
+with open('../DATA/solar.json') as solar_in:  # open JSON file for reading
+    solar = json.load(solar_in, object_hook=lambda d: SimpleNamespace(**d))  # load from file object and convert to Python data structure
+
+print(solar)
+print(solar.star)
+print(solar.innerplanets)
+print(solar.innerplanets[0].moons)
+

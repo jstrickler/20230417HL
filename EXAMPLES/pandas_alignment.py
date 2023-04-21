@@ -31,3 +31,5 @@ print(df1 + df2)  # when dataframes are combined, if no match for row + column l
 
 print_header('df1.add(df2, fill_value=0)')
 print(df1.add(df2, fill_value=0))  # same as #5, but where one dataframe has a value, set it to 0
+
+print(df1.at['purple', 'mango'])

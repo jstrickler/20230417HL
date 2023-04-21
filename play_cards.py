@@ -21,7 +21,14 @@ d1.shuffle()
 print(f"d1.cards: {d1.cards}")
 print('-' * 60)
 
+# def spam():
+#     raise Exception("UHOH!")
+
 for i in range(5):
+    # try:
+    #     spam()
+    # except Exception:
+    #     print("OK")
     print(f"d1.draw(): {d1.draw()}")
 
 print(f"d1.get_suits(): {d1.get_suits()}")

@@ -13,6 +13,8 @@ s2 = pd.Series(data)  # create series with auto-generated index (0, 1, 2, 3, ...
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+print(s1['e'])
+
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # select items from series
 
@@ -20,7 +22,7 @@ print(s1[['a', 'b', 'c']], "\n")  # select items from series
 
 print("slice of elements")
 print(s1['b':'d'], "\n")  # select slice of elements
-
+print(s2[3:7], '\n')
 print("sum(), mean(), min(), max():")
 print(s1.sum(), s1.mean(), s1.min(), s1.max(), "\n")  # get stats on series
 
@@ -51,3 +53,5 @@ print(s4.max(), s4.min(), s4.max() - s4.min(), '\n')  # print stats
 s = pd.Series([5, 10, 15], ['a', 'b', 'c'])  # create new series with index
 print("creating series with index")
 print(s)
+
+print(f"s.iloc[0]: {s.iloc[0]}")
