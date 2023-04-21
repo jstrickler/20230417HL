@@ -27,7 +27,8 @@ with Transport(('localhost', 22)) as transport:  # create paramiko Transport ins
         sftp.rmdir(REMOTE_DIR)
 
     # create remote dir
-    sftp.mkdir(REMOTE_DIR)
+    else:
+        sftp.mkdir(REMOTE_DIR)
 
     # sftp.put(local-file)
     # sftp.put(local-file, remote-file)
