@@ -21,7 +21,9 @@ def main():
         print('-' * 60)
 
         print("raw DATA:")
-        pprint(response.json())
+        pprint(response.json())  # convert JSON into Python data
+        print('-' * 60)
+        print(response.text)
     else:
         print(f"response.status_code: {response.status_code}")
 

@@ -18,7 +18,8 @@ def main(args):
     logging.debug(f"client: {client}")
 
     response = client.service.ListOfContinentsByName()  # call remote function with named parameter
-
+    print(f"type(response): {type(response)}")
+    
     for continent_data in response:
         print(continent_data['sCode'], continent_data['sName'])
 

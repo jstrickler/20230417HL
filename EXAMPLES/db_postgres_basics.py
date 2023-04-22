@@ -15,8 +15,8 @@ pg_cursor.execute('''
 
 print("{} rows in result set\n".format(pg_cursor.rowcount))
 
-for row in pg_cursor.fetchall():
-    print(' '.join(row))
+for firstname, lastname in pg_cursor.fetchall():
+    print(f"{firstname} {lastname}")
 print()
 
 pg_conn.close()
